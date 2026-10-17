@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="TaskManager — твой менеджер задач"> <title>TaskManager</title>
+ </head>
+ <body>
+ </body>
+</html>
+<header>
+ <h1>TaskManager</h1>
+ <p>Твой личный менеджер задач. Пока это интерфейс.</p>
+</header>
+<nav>
+ <a href="#add">Добавить задачу</a>
+ <a href="#data">Список задач</a>
+ <a href="#help">Помощь</a>
+ <a href="https://github.com/ваш-логин" target="_blank">Мой GitHub</a>
+</nav>
+<style>
+ body { font-family: Arial, sans-serif; max-width: 900px;
+ margin: 0 auto; padding: 20px; line-height: 1.5; color: #333; }
+ h1, h2 { color: #1f4e79; }
+ nav a { margin-right: 12px; }
+ form, table { border: 1px solid #ccc; padding: 12px; margin-bottom: 16px; }
+ table, th, td { border: 1px solid #999; border-collapse: collapse; }
+ th, td { padding: 8px 12px; }
+ th { background: #e8f1fa; }
+ label { display: block; margin-top: 8px; }
+ footer { text-align: center; color: #999; margin-top: 20px; }
+</style>
+<main>
+ <section id="add">
+ <h2>Новая задача</h2>
+ <form action="#" method="get">
+ <label for="title">Название</label>
+ <input type="text" id="title" name="title"
+ placeholder="Например: сверстать интерфейс" required>
+ <label for="desc">Описание</label>
+ <textarea id="desc" name="desc" rows="3" cols="40"
+ placeholder="Что нужно сделать?"></textarea>
+ <label for="cat">Категория</label>
+ <select id="cat" name="cat">
+ <option value="study">Учёба</option>
+ <option value="home">Дом</option>
+ <option value="hobby">Хобби</option>
+ </select>
+ <label for="date">Срок</label>
+ <input type="date" id="date" name="date">
+ <label for="priority">Приоритет (1 — срочно, 5 — можно
+подождать)</label>
+ <input type="number" id="priority" name="priority" min="1" max="5" value="3">
+ <button type="submit">Добавить</button>
+ <button type="reset">Очистить</button>
+ </form>
+ </section>
+ <section id="help">
+ <h2>Помощь</h2>
+ <details>
+ <summary>Как добавить задачу?</summary>
+ <p>Заполните форму выше и нажмите «Добавить». Пока данные не
+сохраняются — добавим JavaScript позже.</p>
+</details>
+ <details>
+ <summary>Что дальше?</summary>
+ <p>Следующая работа — оформление интерфейса на CSS.</p>
+ </details>
+ </section>
+</main>
+<footer>
+ <p>© 2026, shop · <a
+href="mailto:kirgizovaana164@gmail.com">kirgizovaana164@gmail.com</a></p>
+</footer>
+</body>
+</html>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+ <rect width="32" height="32" fill="#1f4e79" rx="6"/>
+ <text x="16" y="24" font-size="20" text-anchor="middle"
+fill="#fff">&lt;/&gt;</text>
+</svg>
